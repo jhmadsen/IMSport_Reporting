@@ -1,0 +1,361 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d081ba45-4ac8-4fe2-9cc4-9c3973406270" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Product</ID>
+  <Name>Dim Product</Name>
+  <CreatedTimestamp>2017-05-14T16:16:53.55Z</CreatedTimestamp>
+  <LastSchemaUpdate>2017-06-07T18:19:01.566667Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2348" scrolltop="-4154" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7990" y="12726" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimProduct" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3254" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b60c000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimProduct" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2348</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4154</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="138">
+            <Shape Id="SK Product ID" Expanded="true">
+              <Attributes>
+                <Attribute Id="SK Product ID" />
+                <Attribute Id="Pro Business ID" />
+                <Attribute Id="Pro Color" />
+                <Attribute Id="Pro Description" />
+                <Attribute Id="Pro Is Innovative" />
+                <Attribute Id="Pro Release Date" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Pro Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Pro Name" />
+              </Attributes>
+              <Position x="197" y="20" />
+            </Shape>
+            <Shape Id="Pro Category" Expanded="false">
+              <Attributes>
+                <Attribute Id="Pro Category" />
+              </Attributes>
+              <Position x="375" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2017-06-06T18:12:06.303333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8685c2a7-5eda-4c68-81fa-563049406f48">
+    <DataSourceViewID>IMSportsSalesDW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="8669d467-999c-4fa0-81c5-a56d0dbc0b8e">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="c0dc7b71-6851-4ca0-baf9-cec01a285449">
+      <ID>SK Product ID</ID>
+      <Name>SK Product ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d3ab8b8f-5a21-4883-97f3-e86b1a0e558d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b9b63c94-1566-4eef-9074-ac3745ffee34">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>SK_ProductID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="03b0ed88-07a5-4d46-a2a0-80ba1bb35808">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="da257e67-95bf-4e85-89ee-f6638f51b7b2">
+          <TableID>dbo_DimProduct</TableID>
+          <ColumnID>SK_ProductID</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e7d34070-c228-4da8-a00b-f04255d6a699">
+          <AttributeID>Pro Business ID</AttributeID>
+          <Name>Pro Business ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="120e640d-75a7-46b8-bcbb-c4df256e5931">
+          <AttributeID>Pro Description</AttributeID>
+          <Name>Pro Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ae4f4a14-2feb-430e-96db-f3ee1d49d3e5">
+          <AttributeID>Pro Is Innovative</AttributeID>
+          <Name>Pro Is Innovative</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8c02671c-bba2-409d-a1fe-4be57ec631f7">
+          <AttributeID>Pro Release Date</AttributeID>
+          <Name>Pro Release Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7122f673-4495-4e30-8696-2bd97f7dc7e0">
+          <AttributeID>Pro Name</AttributeID>
+          <Name>Pro Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="996bfd2e-e073-45e5-984c-9f9d7eb01bd9">
+          <AttributeID>Pro Color</AttributeID>
+          <Name>Pro Color</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c0234b5d-81d7-45ea-a360-43837f0238d9">
+      <ID>Pro Business ID</ID>
+      <Name>Pro Business ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4c7a67a8-6f7e-4522-a5ec-0f3190c1625a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="82604e47-fed8-4085-81b7-b5075743aba1">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>proBusinessID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="16344b88-fabd-466d-9c80-62f3fdcfedf6">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="33849567-53c3-4281-8dd6-51480c6e5a94">
+          <TableID>dbo_DimProduct</TableID>
+          <ColumnID>proBusinessID</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="144d0e8a-fc2a-4942-bde4-4e4d0316a0ee">
+      <ID>Pro Name</ID>
+      <Name>Pro Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5e1fd26c-cc03-4f03-a3ee-95a8354421ad">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6a28b49f-6b3b-449a-855d-ae77d81dbb90">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>proName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="8237a469-6002-4ef4-8870-3d47e81b7afe">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fe4437a9-c921-486b-bbef-f0d0a7bfa997">
+          <TableID>dbo_DimProduct</TableID>
+          <ColumnID>proName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b4ac7720-da4c-45f0-a18e-a33cf28d1aed">
+          <AttributeID>Pro Category</AttributeID>
+          <Name>Pro Category</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cf4e6948-a4c7-462b-8bfb-fb694a2f082b">
+      <ID>Pro Color</ID>
+      <Name>Pro Color</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4e74f5ed-115e-4bca-82d1-49d4c952dcf0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="053a4d34-d857-4b40-b8e9-75ba040dcebc">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>proColor</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ce7b27a3-1062-4647-8635-59e33e9cd7f1">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="65dfa6cb-cb2c-45c1-8d2f-9da6046c5a60">
+          <TableID>dbo_DimProduct</TableID>
+          <ColumnID>proColor</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a985cb01-149c-4e7a-b3fc-1c98a287d52e">
+      <ID>Pro Description</ID>
+      <Name>Pro Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bf825830-7e12-4119-b6fb-a593abc1dbcd">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="30ea466e-7e38-48b6-9cfa-7b8214418111">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>proDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="209f5aca-97e8-418f-abee-14ede4450cc3">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b5813a6b-d862-4096-b791-7fed640ee84c">
+          <TableID>dbo_DimProduct</TableID>
+          <ColumnID>proDescription</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d5294007-9085-4db2-919c-86b20db358ab">
+      <ID>Pro Category</ID>
+      <Name>Pro Category</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="94d5b739-b352-4a76-b840-8fdca357e877">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b4521de-a327-4241-b931-46175e783869">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>proCategory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="81cfadf8-a5e9-4fd5-971f-fcbfbe958652">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="913697e2-7a62-4ddb-b408-a1a4b6afbdc3">
+          <TableID>dbo_DimProduct</TableID>
+          <ColumnID>proCategory</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="21794ee4-19f0-43e6-8060-96d112aa441b">
+      <ID>Pro Is Innovative</ID>
+      <Name>Pro Is Innovative</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3366be1f-e894-4d59-8a55-1cf158c37676">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f9ccc2d-91b9-42ea-812f-c916dafc0603">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>proIsInnovative</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="efd211cb-2658-4d26-996d-738da041f8d6">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e422de03-1efd-4ea1-ac96-f814ca68fc91">
+          <TableID>dbo_DimProduct</TableID>
+          <ColumnID>proIsInnovative</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dce683c9-302b-4f82-8fc6-a0929fe0da5f">
+      <ID>Pro Release Date</ID>
+      <Name>Pro Release Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2b95fbac-134c-492c-9517-a19cb5cc8850">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="072d7a1c-82e3-45ae-a137-e8db6f326f5d">
+            <TableID>dbo_DimProduct</TableID>
+            <ColumnID>proReleaseDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="08e0c2d0-6217-48b2-a5ee-690747792e5f">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="64ede5cf-06c5-4d60-b838-78af4aae7c1f">
+          <TableID>dbo_DimProduct</TableID>
+          <ColumnID>proReleaseDate</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="ad403a1d-d468-4851-a8ee-6ee393b984af">
+      <ID>Hierarchy</ID>
+      <Name>proHierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="230f265e-df37-4021-b27f-e5aadc8f7c23">
+          <ID>Pro Category</ID>
+          <Name>Pro Category</Name>
+          <SourceAttributeID>Pro Category</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="abe5de5a-39ff-47e1-9ae0-63685587054e">
+          <ID>Pro Name</ID>
+          <Name>Pro Name</Name>
+          <SourceAttributeID>Pro Name</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching dwd:design-time-name="628caf2e-df9e-4df7-858d-2fa948730c3b">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b0608d5e-ac22-48d8-83cf-10034fa29a76" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

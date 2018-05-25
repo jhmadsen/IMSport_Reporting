@@ -1,0 +1,533 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4cb8bd48-ea8c-4cf5-be23-682eb6c5aa79" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>IMSportsSalesDW</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Sales Header</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="de1a9257-ced0-436e-97ed-dc84dd0fb466">
+          <ID>Fact Sales Header</ID>
+          <Name>Fact Sales Header - 2011</Name>
+          <CreatedTimestamp>2017-05-17T20:42:07.076667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2017-06-07T18:19:01.74Z</LastSchemaUpdate>
+          <LastProcessed>2017-06-07T18:19:11.99Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="bfd2c399-5f7b-4031-85c3-1d4898293c02">
+            <DataSourceID>IMSportsSalesDW</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactSalesHeader].[FK_CustomerID],[dbo].[FactSalesHeader].[FK_LocationID],[dbo].[FactSalesHeader].[FK_ReasonID],[dbo].[FactSalesHeader].[FK_SalesPersonID],[dbo].[FactSalesHeader].[FK_TimeID],[dbo].[FactSalesHeader].[SubPriceTotal],[dbo].[FactSalesHeader].[SubCostTotal],[dbo].[FactSalesHeader].[CustomerSatisfaction],[dbo].[FactSalesHeader].[Complain]
+FROM [dbo].[FactSalesHeader]
+INNER JOIN DimTime ON DimTime.SK_TimeID = FactSalesHeader.FK_TimeID
+WHERE DimTime.timYear = 2011</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <Slice>[Dim Time].[Tim Year].&amp;[2011]</Slice>
+          <ProactiveCaching dwd:design-time-name="364fcedd-7d69-4432-a084-fe47e2b217cc">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="c3dd61da-a6f7-4e19-a040-070ad7628268" />
+          </ProactiveCaching>
+          <EstimatedSize>22852</EstimatedSize>
+          <EstimatedRows>1607</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="43ede1cb-a684-4b4a-9bbb-ada163edbf0f">
+          <ID>Fact Sales Header 1</ID>
+          <Name>Fact Sales Header - 2012</Name>
+          <CreatedTimestamp>2017-05-22T17:30:01.536667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2017-06-07T18:19:01.753333Z</LastSchemaUpdate>
+          <LastProcessed>2017-06-07T18:19:11.99Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="d1d15ff5-0117-40f5-a468-a08e1ed0f1a4">
+            <DataSourceID>IMSportsSalesDW</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactSalesHeader].[FK_CustomerID],[dbo].[FactSalesHeader].[FK_LocationID],[dbo].[FactSalesHeader].[FK_ReasonID],[dbo].[FactSalesHeader].[FK_SalesPersonID],[dbo].[FactSalesHeader].[FK_TimeID],[dbo].[FactSalesHeader].[SubPriceTotal],[dbo].[FactSalesHeader].[SubCostTotal],[dbo].[FactSalesHeader].[CustomerSatisfaction],[dbo].[FactSalesHeader].[Complain]
+FROM [dbo].[FactSalesHeader]
+INNER JOIN DimTime ON DimTime.SK_TimeID = FactSalesHeader.FK_TimeID
+WHERE DimTime.timYear = 2012</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <Slice>[Dim Time].[Tim Year].&amp;[2012]</Slice>
+          <ProactiveCaching dwd:design-time-name="7d484a38-fd3d-49e1-b56f-85bfa06c40aa">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="85b04a87-11db-4726-806e-cb70ea1953a0" />
+          </ProactiveCaching>
+          <EstimatedSize>59079</EstimatedSize>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="7323f614-033e-463e-ad4a-1ce74fbab1db">
+          <ID>Fact Sales Header - 2013</ID>
+          <Name>Fact Sales Header - 2013</Name>
+          <CreatedTimestamp>2017-05-22T17:30:01.54Z</CreatedTimestamp>
+          <LastSchemaUpdate>2017-06-07T18:19:01.786667Z</LastSchemaUpdate>
+          <LastProcessed>2017-06-07T18:19:12.91Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="065fc9fc-6d65-4918-8c1c-0a15862b3f2a">
+            <DataSourceID>IMSportsSalesDW</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactSalesHeader].[FK_CustomerID],[dbo].[FactSalesHeader].[FK_LocationID],[dbo].[FactSalesHeader].[FK_ReasonID],[dbo].[FactSalesHeader].[FK_SalesPersonID],[dbo].[FactSalesHeader].[FK_TimeID],[dbo].[FactSalesHeader].[SubPriceTotal],[dbo].[FactSalesHeader].[SubCostTotal],[dbo].[FactSalesHeader].[CustomerSatisfaction],[dbo].[FactSalesHeader].[Complain]
+FROM [dbo].[FactSalesHeader]
+INNER JOIN DimTime ON DimTime.SK_TimeID = FactSalesHeader.FK_TimeID
+WHERE DimTime.timYear = 2013</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <Slice>[Dim Time].[Tim Year].&amp;[2013]</Slice>
+          <ProactiveCaching dwd:design-time-name="c9be720c-721c-4fa7-ab59-b4f7efa2ac63">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="fcbc8881-d89f-4291-9f3a-42ba312c123a" />
+          </ProactiveCaching>
+          <EstimatedSize>613942</EstimatedSize>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="143e7863-9bb9-488a-832c-309877c9a05b">
+          <ID>Fact Sales Header - 2014</ID>
+          <Name>Fact Sales Header - 2014</Name>
+          <CreatedTimestamp>2017-05-22T17:30:01.553333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2017-06-07T18:19:01.986667Z</LastSchemaUpdate>
+          <LastProcessed>2017-06-07T18:19:12.91Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="f7ff879e-4606-49b9-9dd2-3db822df6c13">
+            <DataSourceID>IMSportsSalesDW</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactSalesHeader].[FK_CustomerID],[dbo].[FactSalesHeader].[FK_LocationID],[dbo].[FactSalesHeader].[FK_ReasonID],[dbo].[FactSalesHeader].[FK_SalesPersonID],[dbo].[FactSalesHeader].[FK_TimeID],[dbo].[FactSalesHeader].[SubPriceTotal],[dbo].[FactSalesHeader].[SubCostTotal],[dbo].[FactSalesHeader].[CustomerSatisfaction],[dbo].[FactSalesHeader].[Complain]
+FROM [dbo].[FactSalesHeader]
+INNER JOIN DimTime ON DimTime.SK_TimeID = FactSalesHeader.FK_TimeID
+WHERE DimTime.timYear = 2014</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <Slice>[Dim Time].[Tim Year].&amp;[2014]</Slice>
+          <ProactiveCaching dwd:design-time-name="13a6a188-424c-4aa5-91e1-985ee5d1e37f">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="ee2ef36a-0519-408d-93dc-f5d9b8e78d6d" />
+          </ProactiveCaching>
+          <EstimatedSize>554168</EstimatedSize>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2017-05-22T19:10:27.953333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2017-06-07T18:19:01.74Z</LastSchemaUpdate>
+          <EstimatedRows>1607</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Dim Time</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>SK Time ID</AttributeID>
+                  <EstimatedCount>1124</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Tim Year</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Tim Month</AttributeID>
+                  <EstimatedCount>38</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Tim Day</AttributeID>
+                  <EstimatedCount>1124</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Tim Quarter</AttributeID>
+                  <EstimatedCount>13</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Tim Season</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Tim Weekday</AttributeID>
+                  <EstimatedCount>260</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Tim Day Of Week</AttributeID>
+                  <EstimatedCount>28</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Sales Person</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>SK Sales Person ID</AttributeID>
+                  <EstimatedCount>18</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sal Business ID</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sal Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sal Years In Company</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sal Territory Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sal Marital Status</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sal Gender</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sal SCD Start Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sal SCD End Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sal Status</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Location</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>SK Location ID</AttributeID>
+                  <EstimatedCount>19614</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Loc Business ID</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Loc City Name</AttributeID>
+                  <EstimatedCount>683</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Loc Postal Code</AttributeID>
+                  <EstimatedCount>672</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Loc State Name</AttributeID>
+                  <EstimatedCount>74</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Loc Country</AttributeID>
+                  <EstimatedCount>6</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Loc Sales Territory Name</AttributeID>
+                  <EstimatedCount>10</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Loc Sales Territory Group</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Customer</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>SK Customer ID</AttributeID>
+                  <EstimatedCount>19820</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Business ID</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Category</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Age</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Marital Status</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Yearly Income</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Gender</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Number Of Children</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Number Of Children At Home</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Education</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Occupation</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Home Owner Flag</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Number Of Cars Owned</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Commute Distance</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Annual Sales</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Annual Revenue</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Business Type</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Years Of Operation</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Specialty</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Square Feet</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Brands</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Internet Connection</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus Number Of Employees</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus SCD Start Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cus SCD End Date</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Reason</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>SK Reason ID</AttributeID>
+                  <EstimatedCount>1024</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Price</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>On Promotion</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Magazine Advertisement</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Television Advertisement</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Manufacturer</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Review</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Demo Event</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sponsorship</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Quality</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Other</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Dim Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Sales Person</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Location</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Loc State Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Reason</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Dim Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Sales Person</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SK Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Location</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Loc Sales Territory Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Reason</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Dim Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Sales Person</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Location</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Loc Sales Territory Name</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Reason</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Dim Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Sales Person</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Location</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Loc Country</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Reason</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Dim Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Sales Person</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SK Sales Person ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Location</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Loc Country</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Reason</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Sales Details</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3628f895-72b2-4ecd-855b-6d46bfec93d0">
+          <ID>Fact Sales Details</ID>
+          <Name>Fact Sales Details</Name>
+          <CreatedTimestamp>2017-05-14T16:16:53.643333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2017-06-07T18:19:02.316667Z</LastSchemaUpdate>
+          <LastProcessed>2017-06-07T18:19:13.316667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c5c68584-927d-47b0-b060-bcc2ff608f2e">
+            <DataSourceViewID>IMSportsSalesDW</DataSourceViewID>
+            <TableID>dbo_FactSalesDetails</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="7ba1bd34-2244-4b2c-9f65-d38c27a16a05">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="dde26a51-1892-4063-bad3-9cfa539ce5a6" />
+          </ProactiveCaching>
+          <EstimatedSize>3537570</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

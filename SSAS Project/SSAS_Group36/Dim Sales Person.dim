@@ -1,0 +1,413 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="691dd8c1-2ff6-4f33-8c3f-fb238a0b4d58" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Sales Person</ID>
+  <Name>Dim Sales Person</Name>
+  <CreatedTimestamp>2017-05-14T16:16:53.533333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2017-06-07T18:19:01.27Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2136" scrolltop="-3863" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7990" y="12726" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimSalesPerson" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3678" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00005e0e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimSalesPerson" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2136</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3863</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="160">
+            <Shape Id="SK Sales Person ID" Expanded="true">
+              <Attributes>
+                <Attribute Id="SK Sales Person ID" />
+                <Attribute Id="Sal Business ID" />
+                <Attribute Id="Sal Gender" />
+                <Attribute Id="Sal Marital Status" />
+                <Attribute Id="Sal SCD End Date" />
+                <Attribute Id="Sal SCD Start Date" />
+                <Attribute Id="Sal Status" />
+                <Attribute Id="Sal Years In Company" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Sal Name" Expanded="true">
+              <Attributes>
+                <Attribute Id="Sal Name" />
+                <Attribute Id="Sal Territory Name" />
+              </Attributes>
+              <Position x="225" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2017-06-06T18:12:06.156667Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2658a76f-49d6-496a-9163-58f098816193">
+    <DataSourceViewID>IMSportsSalesDW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="ac02fd22-28cb-49ea-8a61-0804f792cd2b">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="60360c37-9139-4032-b211-10ccec0ae2bb">
+      <ID>SK Sales Person ID</ID>
+      <Name>SK Sales Person ID</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>18</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a3808ba2-ba16-4afa-b91d-38b22a32740b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7941593-67fb-474a-b16c-ee9b1faab2cf">
+            <TableID>dbo_DimSalesPerson</TableID>
+            <ColumnID>SK_SalesPersonID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a093dfa8-2678-4575-8a72-4cf1d68adccf">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5b3baa0b-102b-401c-b871-1beae62ca475">
+          <TableID>dbo_DimSalesPerson</TableID>
+          <ColumnID>SK_SalesPersonID</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6b8af744-0b8a-4bd4-9d8c-90c95e0e6a67">
+          <AttributeID>Sal Business ID</AttributeID>
+          <Name>Sal Business ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="12d2f32a-f91c-454b-ac49-b407e476476d">
+          <AttributeID>Sal Name</AttributeID>
+          <Name>Sal Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5c49961c-efe1-4257-bfa8-c29bf725ec74">
+          <AttributeID>Sal Years In Company</AttributeID>
+          <Name>Sal Years In Company</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9fc5ec49-931a-4535-89db-3370e1f06c47">
+          <AttributeID>Sal Marital Status</AttributeID>
+          <Name>Sal Marital Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bdbb2d8e-f151-42c5-8385-9bf6d732e4fe">
+          <AttributeID>Sal Gender</AttributeID>
+          <Name>Sal Gender</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="638c7b7e-41c1-4203-b5b4-aecbed4da49c">
+          <AttributeID>Sal SCD Start Date</AttributeID>
+          <Name>Sal SCD Start Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2eb9cf75-97b3-41a5-a8a0-ee7a9b8c2538">
+          <AttributeID>Sal SCD End Date</AttributeID>
+          <Name>Sal SCD End Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="59a0fd01-d2e4-44e9-83e9-914101c82514">
+          <AttributeID>Sal Status</AttributeID>
+          <Name>Sal Status</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d341025e-e8d6-4e25-8a6c-4afced34a7b1">
+      <ID>Sal Business ID</ID>
+      <Name>Sal Business ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="64755b9a-008a-41dd-a160-ad853e6cdd5f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e10c9f58-dd12-4908-b3f6-ae187a6e1972">
+            <TableID>dbo_DimSalesPerson</TableID>
+            <ColumnID>salBusinessID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3d7f1054-76ca-4d82-b33a-0f402afa9f45">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ec261d14-f7ed-4568-95f6-f68b843ff728">
+          <TableID>dbo_DimSalesPerson</TableID>
+          <ColumnID>salBusinessID</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="86dc1fbb-f3e7-4ab2-91cd-3d77b66d85f2">
+      <ID>Sal Name</ID>
+      <Name>Sal Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cb76d3cd-e2e4-48e7-8ff7-af5b603798d7">
+          <DataType>WChar</DataType>
+          <DataSize>256</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d476668-a5e8-4c0c-96c8-c6a9b2769ea2">
+            <TableID>dbo_DimSalesPerson</TableID>
+            <ColumnID>salName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1557e1c9-d816-4fbb-b214-eecb3df4d831">
+        <DataType>WChar</DataType>
+        <DataSize>256</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8759e67a-9c93-4a79-ab90-42aa3cff87c0">
+          <TableID>dbo_DimSalesPerson</TableID>
+          <ColumnID>salName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1cbe2543-6276-44ee-834f-d444ddcbd8ee">
+          <AttributeID>Sal Territory Name</AttributeID>
+          <Name>Sal Territory Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d94b7c67-e244-4a91-a058-024b6d9ac2fb">
+      <ID>Sal Years In Company</ID>
+      <Name>Sal Years In Company</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="26202d82-6988-48ad-ab4f-60e82c938573">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="45d0cb63-f933-4104-8e23-ba4084ed273e">
+            <TableID>dbo_DimSalesPerson</TableID>
+            <ColumnID>SK_SalesPersonID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="438a141e-f0d6-4f51-9ec8-b1de64f1638c">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9912a4c4-5465-4aef-a8a9-3563c76ae66f">
+          <TableID>dbo_DimSalesPerson</TableID>
+          <ColumnID>SK_SalesPersonID</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f1b1319-be8c-42bc-833c-58486c692cfe">
+      <ID>Sal Territory Name</ID>
+      <Name>Sal Territory Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="75272231-d666-4a1c-b898-48c74f95da63">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9c650a14-6975-4b79-bc00-58b655f0ef87">
+            <TableID>dbo_DimSalesPerson</TableID>
+            <ColumnID>salTerritoryName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="842b1da6-7e46-4a4a-9765-aff7c692efd8">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2cff8e73-de2a-4cb0-b709-8da399214194">
+          <TableID>dbo_DimSalesPerson</TableID>
+          <ColumnID>salTerritoryName</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fa13d105-2259-4166-ab78-695418bf2347">
+      <ID>Sal Marital Status</ID>
+      <Name>Sal Marital Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="81a91531-5a54-43c0-a3cc-4ee8729765fb">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a9d18632-94b4-4826-8431-c4531f7b84ae">
+            <TableID>dbo_DimSalesPerson</TableID>
+            <ColumnID>salMaritalStatus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="fe7719be-c376-4ca2-a09f-d720a29d2e37">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="96343527-4109-492e-b7b4-b2acc189544c">
+          <TableID>dbo_DimSalesPerson</TableID>
+          <ColumnID>salMaritalStatus</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="96925283-704d-41ae-a189-b07ee4b3ed77">
+      <ID>Sal Gender</ID>
+      <Name>Sal Gender</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b636c48a-1aa9-4da7-ad96-f29c970b4036">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e3a24c29-4336-420c-a278-936e27debe86">
+            <TableID>dbo_DimSalesPerson</TableID>
+            <ColumnID>salGender</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4cc6bb6b-4890-4362-8a8d-346ca62128e2">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="35ef1b92-955c-4dd4-8305-c10e0fcca5f2">
+          <TableID>dbo_DimSalesPerson</TableID>
+          <ColumnID>salGender</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a9e501cf-583b-4ac1-8f83-b58375323e09">
+      <ID>Sal SCD Start Date</ID>
+      <Name>Sal SCD Start Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b9c6ce08-0b28-45ea-a518-ac53b8939cfc">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d91b740a-d653-4f29-ab77-73fbb567d0cb">
+            <TableID>dbo_DimSalesPerson</TableID>
+            <ColumnID>salSCD_StartDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b5893e81-e047-4bc3-8c3c-b0261d604494">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fde1af0e-baca-4cc7-9c51-b5365bbc14a6">
+          <TableID>dbo_DimSalesPerson</TableID>
+          <ColumnID>salSCD_StartDate</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e8f7d5e7-7ec3-4d36-b0f9-b15737d998aa">
+      <ID>Sal SCD End Date</ID>
+      <Name>Sal SCD End Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="73d4c6bf-03bc-41dc-92f7-29656de5e4d7">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59d21213-c32c-4407-acea-40acc80b3ef6">
+            <TableID>dbo_DimSalesPerson</TableID>
+            <ColumnID>salSCD_EndDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="bc29e86c-4d1f-44b5-b4d6-4bab7b433653">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4f92bb91-4af9-43db-9501-82378f74f106">
+          <TableID>dbo_DimSalesPerson</TableID>
+          <ColumnID>salSCD_EndDate</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1627b009-cc26-4cb6-87b6-930330ef236c">
+      <ID>Sal Status</ID>
+      <Name>Sal Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0c992966-b8fa-4e19-89fa-04e9d6a6ba75">
+          <DataType>WChar</DataType>
+          <DataSize>1024</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ecccda98-0cfc-42f4-83de-6d881e28a2df">
+            <TableID>dbo_DimSalesPerson</TableID>
+            <ColumnID>salStatus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e8d6e3e0-d730-4e13-b665-0fdd1820b2fc">
+        <DataType>WChar</DataType>
+        <DataSize>1024</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cb16a65a-4159-4509-a4df-3876aa4818de">
+          <TableID>dbo_DimSalesPerson</TableID>
+          <ColumnID>salStatus</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="9b91869c-97e5-4148-bef9-bf3aabb9fe49">
+      <ID>Hierarchy</ID>
+      <Name>salHierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="a4de66b7-7fcc-4788-8980-7dbce6c3c7d4">
+          <ID>Sal Territory Name</ID>
+          <Name>Sal Territory Name</Name>
+          <SourceAttributeID>Sal Territory Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5aebca0e-16ac-422b-99f4-404852190393">
+          <ID>Sal Name</ID>
+          <Name>Sal Name</Name>
+          <SourceAttributeID>Sal Name</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching dwd:design-time-name="7b9ae830-37ca-4f80-9682-faf08fd1d4f2">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="3b536e53-9dda-4f82-b90d-4299fbbb7e4f" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

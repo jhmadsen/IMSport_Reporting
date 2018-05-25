@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="IMSportsSalesDW">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=WIN-44825ORJLJA;Initial Catalog=IMSportsSalesDW</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
+    <Prompt>Specify a user name and password for data source IMSportsSalesDW</Prompt>
+  </ConnectionProperties>
+  <DataSourceID>c713e709-70da-4f67-8cd2-62717ca743a4</DataSourceID>
+</RptDataSource>

@@ -1,0 +1,818 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="74ba7939-36dc-40c6-a515-977c610a0da6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Customer</ID>
+  <Name>Dim Customer</Name>
+  <CreatedTimestamp>2017-05-14T16:16:53.55Z</CreatedTimestamp>
+  <LastSchemaUpdate>2017-06-07T18:19:01.41Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1501" scrolltop="-3863" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7990" y="12726" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimCustomer" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4948" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00005413000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimCustomer" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1501</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3863</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="214">
+            <Shape Id="SK Customer ID" Expanded="false">
+              <Attributes>
+                <Attribute Id="SK Customer ID" />
+                <Attribute Id="Cus Age" />
+                <Attribute Id="Cus Annual Revenue" />
+                <Attribute Id="Cus Annual Sales" />
+                <Attribute Id="Cus Brands" />
+                <Attribute Id="Cus Business ID" />
+                <Attribute Id="Cus Business Type" />
+                <Attribute Id="Cus Commute Distance" />
+                <Attribute Id="Cus Education" />
+                <Attribute Id="Cus Gender" />
+                <Attribute Id="Cus Home Owner Flag" />
+                <Attribute Id="Cus Internet Connection" />
+                <Attribute Id="Cus Marital Status" />
+                <Attribute Id="Cus Number Of Cars Owned" />
+                <Attribute Id="Cus Number Of Children" />
+                <Attribute Id="Cus Number Of Children At Home" />
+                <Attribute Id="Cus Number Of Employees" />
+                <Attribute Id="Cus Occupation" />
+                <Attribute Id="Cus SCD End Date" />
+                <Attribute Id="Cus SCD Start Date" />
+                <Attribute Id="Cus Specialty" />
+                <Attribute Id="Cus Square Feet" />
+                <Attribute Id="Cus Yearly Income" />
+                <Attribute Id="Cus Years Of Operation" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Cus Category" Expanded="false">
+              <Attributes>
+                <Attribute Id="Cus Category" />
+              </Attributes>
+              <Position x="292" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2017-06-06T18:12:07.033333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="dae20310-b5d2-47ea-b968-cbe70f8b1951">
+    <DataSourceViewID>IMSportsSalesDW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="a8ca8535-1483-4e50-add7-e90b999f00c8">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="49943b5c-78da-4135-b864-db6e03bdd055">
+      <ID>SK Customer ID</ID>
+      <Name>SK Customer ID</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>19820</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="44068b3a-afc0-4bf4-93c9-06e05549075c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a124461e-16ce-4a22-983b-c07d200024cf">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>SK_CustomerID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="75b69387-9586-44b5-a596-1c8ed1f37ddb">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c6640c6e-d9a2-4981-8357-237188c2beec">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>SK_CustomerID</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d37308d2-5a25-48c2-aef8-e47ea0277e06">
+          <AttributeID>Cus Business ID</AttributeID>
+          <Name>Cus Business ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="67fbb4cf-b0b8-48ec-b596-d63af1a0cee7">
+          <AttributeID>Cus Category</AttributeID>
+          <Name>Cus Category</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8f27ac38-b257-448e-816a-899f37cb8820">
+          <AttributeID>Cus Age</AttributeID>
+          <Name>Cus Age</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6f8f9192-dd40-42f8-baf2-70e7b5f9e2ef">
+          <AttributeID>Cus Marital Status</AttributeID>
+          <Name>Cus Marital Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5916494f-3780-46a5-838f-b57981fbe633">
+          <AttributeID>Cus Yearly Income</AttributeID>
+          <Name>Cus Yearly Income</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5516f570-7e46-42ce-8dd6-cc909845a025">
+          <AttributeID>Cus Gender</AttributeID>
+          <Name>Cus Gender</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="78b08666-5e16-4a4a-81b6-aa3183b11408">
+          <AttributeID>Cus Number Of Children</AttributeID>
+          <Name>Cus Number Of Children</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="34f4521c-3f0d-4382-871d-80487f1f3776">
+          <AttributeID>Cus Number Of Children At Home</AttributeID>
+          <Name>Cus Number Of Children At Home</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b4a26274-052a-48d1-b43f-0b550b60e21e">
+          <AttributeID>Cus Education</AttributeID>
+          <Name>Cus Education</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1f271122-f984-44b1-969e-248c612fcc25">
+          <AttributeID>Cus Occupation</AttributeID>
+          <Name>Cus Occupation</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c23975e4-d8ac-4480-8435-06e74a67f97a">
+          <AttributeID>Cus Home Owner Flag</AttributeID>
+          <Name>Cus Home Owner Flag</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="176924d3-fef8-420d-9655-731032f64ac3">
+          <AttributeID>Cus Number Of Cars Owned</AttributeID>
+          <Name>Cus Number Of Cars Owned</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b665811d-4d01-40f0-9f57-efbc8c88079f">
+          <AttributeID>Cus Commute Distance</AttributeID>
+          <Name>Cus Commute Distance</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="328e73e7-fcff-4be4-b90f-0a99b17bf9e2">
+          <AttributeID>Cus Annual Sales</AttributeID>
+          <Name>Cus Annual Sales</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eace6b17-91e0-4cd0-95ef-a895c232f4b8">
+          <AttributeID>Cus Annual Revenue</AttributeID>
+          <Name>Cus Annual Revenue</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a2027257-3a92-42fc-8484-dfc58021e8b6">
+          <AttributeID>Cus Business Type</AttributeID>
+          <Name>Cus Business Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="afbcca5f-5e14-40b6-abfd-5e1b38ba0b23">
+          <AttributeID>Cus Years Of Operation</AttributeID>
+          <Name>Cus Years Of Operation</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="43d92d0e-5333-4c1e-809e-c5d6853e2c83">
+          <AttributeID>Cus Specialty</AttributeID>
+          <Name>Cus Specialty</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9173e959-125e-4c39-b172-3f18190446ef">
+          <AttributeID>Cus Square Feet</AttributeID>
+          <Name>Cus Square Feet</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8843924e-6b7c-4bbd-9c77-66ff55a7ec62">
+          <AttributeID>Cus Brands</AttributeID>
+          <Name>Cus Brands</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="53c0bbb6-4b0c-431e-af8a-9a43c9b327ad">
+          <AttributeID>Cus Internet Connection</AttributeID>
+          <Name>Cus Internet Connection</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e6d35bf2-be7a-4489-8caf-676374777ebc">
+          <AttributeID>Cus Number Of Employees</AttributeID>
+          <Name>Cus Number Of Employees</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="80d7371f-a7e7-4e7b-a2b3-6f25c5f6a664">
+          <AttributeID>Cus SCD Start Date</AttributeID>
+          <Name>Cus SCD Start Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7e535a60-9cb9-4d29-a6f6-a864f7017346">
+          <AttributeID>Cus SCD End Date</AttributeID>
+          <Name>Cus SCD End Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bc0f799b-b13f-414f-9a1e-4cdb7d210d48">
+      <ID>Cus Business ID</ID>
+      <Name>Cus Business ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bc8f450a-e49d-44f4-9b85-a0936da3054b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f5cce88f-e01a-4538-bf81-dd7cd4df04c2">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusBusinessID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="5bd4ed9f-291c-4811-a9e2-d09780cd85a6">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8fed40cc-ad52-48f7-9790-672feb1fb281">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusBusinessID</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c0a957cd-8099-4ff5-9d25-d068112282f8">
+      <ID>Cus Category</ID>
+      <Name>Cus Category</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="34b4dc13-8e16-4718-9b7c-c1fbc000f35d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d787769-dffc-4850-9c5d-bf6fdf2a400b">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusCategory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d246f85a-e519-4472-9c92-3d4c3199dd7f">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a498b8d8-f95b-49d1-a1c8-30052d8f12a4">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusCategory</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dfa83da0-8efa-4e59-8b84-7b53fae18070">
+      <ID>Cus Age</ID>
+      <Name>Cus Age</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9995bd1a-bebf-4531-8274-f44433449129">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a2a6e7c-3b96-4cbb-85e9-a52a0d1ceed3">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusAge</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="25eb6586-862a-4147-86c8-b7157958fa92">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d8a7931b-da7a-43a7-852a-45fa02b3c583">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusAge</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f1073fb5-8ebe-4532-80bd-f1ee43c6be0f">
+      <ID>Cus Marital Status</ID>
+      <Name>Cus Marital Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e15aceaa-541c-41d3-ab9a-ca45e416809c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="49229ef6-3177-4948-b77a-677dc8ad5fcf">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusMaritalStatus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="0832f33f-d006-45e4-91d3-07c40e0a60b0">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="68763304-49ff-4156-8aa3-1bd7cdeb1af8">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusMaritalStatus</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="14d64ac8-9411-4375-a058-9fb88c87d99f">
+      <ID>Cus Yearly Income</ID>
+      <Name>Cus Yearly Income</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cb798336-ad38-482b-9e11-1d0a089b4dec">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ff3bddb-a331-4eb7-aca8-a891918c3944">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusYearlyIncome</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="74d22d91-ff54-4d8c-b7b9-ac00a3aaab14">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2d2ecae2-49ef-4f6e-bb68-f35ed242a373">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusYearlyIncome</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9bab50a0-cd05-4bcc-b067-5be7e57e8c9c">
+      <ID>Cus Gender</ID>
+      <Name>Cus Gender</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3bdea630-7bec-48be-9d48-d361f7e716a9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d0eb837f-ee0e-4b08-aa9d-ffa0cde17eb7">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusGender</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e7c4b56a-6bb8-4e13-a0a4-3510684a14fd">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6e4993f0-291d-4585-9d51-fee7a59c3ad1">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusGender</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5eac4169-d729-45a9-a52e-5591934e6f2a">
+      <ID>Cus Number Of Children</ID>
+      <Name>Cus Number Of Children</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="23bf4a07-34db-47bb-a6b4-89d3d79e32ae">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea3df5e8-5b86-4e7a-a0c8-4b7a4c45859b">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusNumberOfChildren</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="6ab698d2-e9e9-45b5-a3ea-f63009beedd9">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b4bca6c7-b6bc-4d7f-a83a-6499b111779c">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusNumberOfChildren</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0e46b2d6-a78f-4801-9081-f1efb0bb5cb8">
+      <ID>Cus Number Of Children At Home</ID>
+      <Name>Cus Number Of Children At Home</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="22f523a6-ff60-4228-ac58-914f7adca2fe">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9d4af6e0-2ede-4404-8029-d7c3e26a37eb">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusNumberOfChildrenAtHome</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="12e0868a-ffa4-411b-970f-9cc199e28e84">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e33f0140-496c-4a93-a9ce-55885ced2424">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusNumberOfChildrenAtHome</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e1db5835-aa8b-42ec-8943-46b17abeef81">
+      <ID>Cus Education</ID>
+      <Name>Cus Education</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="beb66c90-ee81-4127-bfe7-f6fba1c64fc3">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a6441edd-aafc-48ca-abc7-96a273d18a19">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusEducation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="bec3294a-d030-4319-915b-4c960317b907">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b220afea-c037-43f3-abe6-dc8c0c75201b">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusEducation</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7a6d213c-b936-482f-9f10-ae0d81f13e15">
+      <ID>Cus Occupation</ID>
+      <Name>Cus Occupation</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ba4c4d00-c133-4709-82a0-4d732df533aa">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d6023589-5a3d-47d5-b1f7-ec9ebe0a0b41">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusOccupation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="dd9c152c-d34b-4ab6-8a56-a1f5c949274c">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="de0c79ec-2b21-4252-a329-97cc09b45cc5">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusOccupation</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3d21ab94-7ef0-4012-ae9a-bd36b74f9e01">
+      <ID>Cus Home Owner Flag</ID>
+      <Name>Cus Home Owner Flag</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a9010e72-07cb-43c6-a40b-537ed60a1420">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e77695a0-318d-415a-b680-bf6258c63e8f">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusHomeOwnerFlag</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ad0922db-a7a7-4382-b32e-97498bc12e91">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a7f462ab-5aaa-44f9-b131-d9241380686f">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusHomeOwnerFlag</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a2f66da9-a069-4c25-a3ab-1375f59b985b">
+      <ID>Cus Number Of Cars Owned</ID>
+      <Name>Cus Number Of Cars Owned</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e28bf87d-16e0-4371-9273-8ccd7bd9f7ab">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="484779fb-4bb3-49bf-bb00-f4c88948c082">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusNumberOfCarsOwned</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="62119807-13f7-44f0-985c-ffbcfd598050">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b52c2f64-99f5-4c73-b242-945b13529f43">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusNumberOfCarsOwned</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0f322153-ca5c-4456-a7bb-f7bf69fdeeef">
+      <ID>Cus Commute Distance</ID>
+      <Name>Cus Commute Distance</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0e7dd4b9-7d09-4f24-97c9-2d583ac291c3">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="36ba4886-c6d0-4358-95c0-84401cb0181c">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusCommuteDistance</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ccc9c81c-47c2-4339-9fee-ed480ecf47cb">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="11e37ad5-4337-4705-9eff-46cd4bb8fa05">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusCommuteDistance</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="06358324-991b-4032-9307-4ea75a15f8ab">
+      <ID>Cus Annual Sales</ID>
+      <Name>Cus Annual Sales</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="17ff6061-7090-473a-b13d-4168022968f8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="94a2d82c-356d-495b-b077-772152bc9b00">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusAnnualSales</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d161b13a-fba7-4e63-9734-e102702aa106">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c7e1739c-bdd9-4ccb-a000-64781eb31891">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusAnnualSales</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c104949d-dccb-4459-b179-ad1c44bb9196">
+      <ID>Cus Annual Revenue</ID>
+      <Name>Cus Annual Revenue</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a1aa670-adf4-49e8-b6b4-16bb953e6f5f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dd4a1346-70f4-491a-9229-46ec73ee7712">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusAnnualRevenue</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="8d72bf3c-03f3-4311-99ac-6049136b5c9e">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="eefdc66f-15fc-482d-92f0-eacf9bd0fd9d">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusAnnualRevenue</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="219a1ef5-0309-45f8-87d0-b8e9316a1c46">
+      <ID>Cus Business Type</ID>
+      <Name>Cus Business Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0bc0b632-4b48-4e77-b962-55d7a5977e45">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f865357-7498-443b-aec7-6ecdf12ae431">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusBusinessType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="71cb4a4c-32f6-43b1-84db-a96557685dc8">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="dd2a6fa1-c12b-460c-92c3-fe48b0b2cf13">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusBusinessType</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6d1b86a5-cf8a-48bd-8067-a9ffbba41dbb">
+      <ID>Cus Years Of Operation</ID>
+      <Name>Cus Years Of Operation</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1e45c0a4-7bb3-4879-b148-4b36926b6476">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="368417de-48fb-491e-980a-41400a67c37e">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusYearsOfOperation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="0b578f40-a6d4-4e9c-baca-6a62d678620b">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="10417836-cd9a-469a-841b-9569a174f308">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusYearsOfOperation</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7e6835ce-4f89-4c1a-bfd9-03a7e7bf9f2e">
+      <ID>Cus Specialty</ID>
+      <Name>Cus Specialty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0dae272a-6d98-49cf-b7e4-72f0b9806258">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f1aa770c-703e-4dd5-8ece-bca3455d11dd">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusSpecialty</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e5d4b384-fd47-4ac0-85db-5853884e510d">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d3b80223-05e8-48ef-b39f-4e2bf4d36854">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusSpecialty</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c7d67c78-b906-46b1-85f0-660b7f74548e">
+      <ID>Cus Square Feet</ID>
+      <Name>Cus Square Feet</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6fba091e-0bd5-4e27-b9fb-a7f464b1f2f4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a87cf305-69f6-4f0f-8e76-59d9d22cbb2f">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusSquareFeet</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="74c19462-6ffa-49cd-841d-4dea9227c3b7">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8e77cf79-571c-4bc7-851b-a6f0b92c21a0">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusSquareFeet</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="70e38934-56c6-4e51-9226-db9dc4c4e20c">
+      <ID>Cus Brands</ID>
+      <Name>Cus Brands</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8c529ffe-5139-4e9d-a764-dcef0321d1e4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b3fc485c-3264-40a9-84f6-149deb9eaaae">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusBrands</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="71ac40d2-85f9-4f8a-aaff-0343e8a3c645">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4be46200-4f33-463d-b42d-a9968cd1462d">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusBrands</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5c02a783-6125-4958-9389-38380c091f03">
+      <ID>Cus Internet Connection</ID>
+      <Name>Cus Internet Connection</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="52d6ea46-5110-483c-a630-f00d52396bb9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ad0afcd-4c36-447b-ba0f-9b1345e33d44">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusInternetConnection</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="827a0022-1759-41e3-a8ee-ac2a9514b001">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fd4ba0ec-008d-43c1-b1b7-d7e74d758570">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusInternetConnection</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ec908fa0-6f4d-4c18-a1f0-0a24594c9107">
+      <ID>Cus Number Of Employees</ID>
+      <Name>Cus Number Of Employees</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a351bdf-6995-45ae-9bc5-a8d6219abf26">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="63bd0d6b-c02c-42e5-a7fc-ce0a3cca59b7">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusNumberOfEmployees</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a236ab8b-0dac-497e-95af-efc01c0ede23">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="14c12a18-0800-4715-a646-2ff8e955733d">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusNumberOfEmployees</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1f6d1c7b-36c6-4d5d-96a9-677c27048fd1">
+      <ID>Cus SCD Start Date</ID>
+      <Name>Cus SCD Start Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e15be6db-6568-4f60-91fc-3717882bd7c1">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e3c92732-a9c6-4c4e-b52c-afe6dbe0e1ef">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusSCD_StartDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b8dd6a7d-8e9e-4476-bf8d-db64002d79f1">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="70f87f64-7d6d-4113-ab84-b6d064bc30d3">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusSCD_StartDate</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0ee38400-9897-4a84-9f2f-db95eb9877d8">
+      <ID>Cus SCD End Date</ID>
+      <Name>Cus SCD End Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="23ece716-26e9-48ca-b48a-250873e1990c">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4bbea815-b531-49b9-937b-5194c71eef50">
+            <TableID>dbo_DimCustomer</TableID>
+            <ColumnID>cusSCD_EndDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e5887be9-2e47-4413-a993-5245bc49fd54">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4e073e4a-bb71-427f-8421-bfca1448e866">
+          <TableID>dbo_DimCustomer</TableID>
+          <ColumnID>cusSCD_EndDate</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ProactiveCaching dwd:design-time-name="33af1d7e-48c4-421e-9d10-15dcbe204f8c">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b592c8f5-316d-4a46-b967-a9d5f3c124ec" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

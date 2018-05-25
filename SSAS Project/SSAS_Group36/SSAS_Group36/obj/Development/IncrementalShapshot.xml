@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SSAS_Group36</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>rYdgTZ4pRKgXnZ9egqKgMcFvvw8=6/7/2017 7:47:00 PM6/7/2017 7:47:12 PM</TimeStamp>
+        <ID>
+          <String>IMSportsSalesDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>76GvLR2fRTSGLAFPsmkUsh9eY1A=6/7/2017 7:47:00 PM6/7/2017 7:47:12 PM</TimeStamp>
+        <ID>
+          <String>IMSportsSalesDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OX/Olswpl/0Dpf+EYsGnVMxpE9E=6/10/2017 6:11:17 PM6/7/2017 7:47:11 PM</TimeStamp>
+        <ID>
+          <String>Dim Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>SfRZG+bjPxCrHX60flcN9GbYRy8=6/7/2017 7:47:00 PM6/7/2017 7:47:11 PM</TimeStamp>
+        <ID>
+          <String>Dim Location</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>WfsK07i9boQMtCClZmyHNZLR7xs=6/10/2017 6:15:23 PM6/7/2017 7:47:11 PM</TimeStamp>
+        <ID>
+          <String>Dim Product</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>PSHZvgNgYyGUUsjR1auDzu//HX4=6/7/2017 7:47:00 PM6/7/2017 7:47:11 PM</TimeStamp>
+        <ID>
+          <String>Dim Reason</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Rp9AuHFkK7eykPUB8I3l+bY91/g=6/7/2017 7:47:00 PM6/7/2017 7:47:12 PM</TimeStamp>
+        <ID>
+          <String>Dim Sales Person</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JRhtsQPAXitko/0FD2BbxyHW3gs=6/7/2017 7:47:00 PM6/7/2017 7:47:12 PM</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>vNDH4efZmMbg3iWk4AUWoTKrzeo=6/10/2017 6:11:17 PM6/7/2017 7:47:12 PMCnGenkz2TwLoovaBdLQ/t/H0pFI=6/7/2017 7:48:00 PM6/7/2017 7:47:12 PM</TimeStamp>
+        <ID>
+          <String>IMSportsSalesDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>NvaLHzqKEk6XnX4V7haR6YhgwRk=6/7/2017 7:47:00 PM6/7/2017 7:47:11 PM</TimeStamp>
+        <ID>
+          <String>Clustering Table</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>fpgJ7rk4OFqSNBLP3XC5+uqct4M=6/7/2017 7:47:11 PM6/7/2017 7:47:11 PM</TimeStamp>
+      <ID>
+        <String>SSAS_Group36</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2017-06-10T17:14:53.576667Z</LastDeployed>
+</DeploymentSnapshot>
